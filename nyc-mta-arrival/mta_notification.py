@@ -6,6 +6,7 @@ import os # imports package for dotenv
 
 from dotenv import load_dotenv, find_dotenv # imports module for dotenv
 load_dotenv(dotenv_path='MTA.env') # loads .env from root directory
+load_dotenv(dotenv_path='MTA_API_KEY.env')
 
 # The root directory requires a .env file with API_KEY assigned/defined within
 # and dotenv installed from pypi. Get API key from http://datamine.mta.info/user
