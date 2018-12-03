@@ -1,0 +1,262 @@
+{
+  "abc-news": {
+    "name": "ABC News",
+    "enabled": true
+  },
+  "al-jazeera-english": {
+    "name": "Al Jazeera English",
+    "enabled": false
+  },
+  "associated-press": {
+    "name": "Associated Press",
+    "enabled": true
+  },
+  "axios": {
+    "name": "Axios",
+    "enabled": false
+  },
+  "bbc-news": {
+    "name": "BBC News",
+    "enabled": true
+  },
+  "bbc-sport": {
+    "name": "BBC Sport",
+    "enabled": false
+  },
+  "bild": {
+    "name": "Bild",
+    "enabled": false
+  },
+  "bleacher-report": {
+    "name": "Bleacher Report",
+    "enabled": true
+  },
+  "bloomberg": {
+    "name": "Bloomberg",
+    "enabled": true
+  },
+  "business-insider": {
+    "name": "Business Insider",
+    "enabled": true
+  },
+  "cbs-news": {
+    "name": "CBS News",
+    "enabled": true
+  },
+  "cnbc": {
+    "name": "CNBC",
+    "enabled": true
+  },
+  "cnn": {
+    "name": "CNN",
+    "enabled": true
+  },
+  "crypto-coins-news": {
+    "name": "Crypto Coins News",
+    "enabled": false
+  },
+  "daily-mail": {
+    "name": "Daily Mail",
+    "enabled": true
+  },
+  "engadget": {
+    "name": "Engadget",
+    "enabled": false
+  },
+  "entertainment-weekly": {
+    "name": "Entertainment Weekly",
+    "enabled": true
+  },
+  "espn": {
+    "name": "ESPN",
+    "enabled": true
+  },
+  "financial-post": {
+    "name": "Financial Post",
+    "enabled": false
+  },
+  "financial-times": {
+    "name": "Financial Times",
+    "enabled": false
+  },
+  "fortune": {
+    "name": "Fortune",
+    "enabled": false
+  },
+  "fox-news": {
+    "name": "Fox News",
+    "enabled": true
+  },
+  "fox-sports": {
+    "name": "Fox Sports",
+    "enabled": true
+  },
+  "google-news": {
+    "name": "Google News",
+    "enabled": true
+  },
+  "hacker-news": {
+    "name": "Hacker News",
+    "enabled": false
+  },
+  "ign": {
+    "name": "IGN",
+    "enabled": false
+  },
+  "independent": {
+    "name": "Independent",
+    "enabled": false
+  },
+  "info-money": {
+    "name": "InfoMoney",
+    "enabled": false
+  },
+  "mashable": {
+    "name": "Mashable",
+    "enabled": true
+  },
+  "medical-news-today": {
+    "name": "Medical News Today",
+    "enabled": false
+  },
+  "metro": {
+    "name": "Metro",
+    "enabled": false
+  },
+  "mirror": {
+    "name": "Mirror",
+    "enabled": false
+  },
+  "msnbc": {
+    "name": "MSNBC",
+    "enabled": true
+  },
+  "mtv-news": {
+    "name": "MTV News",
+    "enabled": false
+  },
+  "national-geographic": {
+    "name": "National Geographic",
+    "enabled": false
+  },
+  "national-review": {
+    "name": "National Review",
+    "enabled": false
+  },
+  "nbc-news": {
+    "name": "NBC News",
+    "enabled": true
+  },
+  "new-scientist": {
+    "name": "New Scientist",
+    "enabled": false
+  },
+  "newsweek": {
+    "name": "Newsweek",
+    "enabled": true
+  },
+  "new-york-magazine": {
+    "name": "New York Magazine",
+    "enabled": false
+  },
+  "nfl-news": {
+    "name": "NFL News",
+    "enabled": false
+  },
+  "nhl-news": {
+    "name": "NHL News",
+    "enabled": false
+  },
+  "politico": {
+    "name": "Politico",
+    "enabled": false
+  },
+  "reddit-r-all": {
+    "name": "Reddit /r/all",
+    "enabled": false
+  },
+  "reuters": {
+    "name": "Reuters",
+    "enabled": false
+  },
+  "techcrunch": {
+    "name": "TechCrunch",
+    "enabled": true
+  },
+  "techradar": {
+    "name": "TechRadar",
+    "enabled": false
+  },
+  "the-american-conservative": {
+    "name": "The American Conservative",
+    "enabled": false
+  },
+  "the-economist": {
+    "name": "The Economist",
+    "enabled": true
+  },
+  "the-guardian-uk": {
+    "name": "The Guardian (UK)",
+    "enabled": false
+  },
+  "the-hill": {
+    "name": "The Hill",
+    "enabled": false
+  },
+  "the-huffington-post": {
+    "name": "The Huffington Post",
+    "enabled": false
+  },
+  "the-lad-bible": {
+    "name": "The Lad Bible",
+    "enabled": false
+  },
+  "the-new-york-times": {
+    "name": "The New York Times",
+    "enabled": true
+  },
+  "the-next-web": {
+    "name": "The Next Web",
+    "enabled": false
+  },
+  "the-sport-bible": {
+    "name": "The Sport Bible",
+    "enabled": false
+  },
+  "the-telegraph": {
+    "name": "The Telegraph",
+    "enabled": false
+  },
+  "the-verge": {
+    "name": "The Verge",
+    "enabled": false
+  },
+  "the-wall-street-journal": {
+    "name": "The Wall Street Journal",
+    "enabled": true
+  },
+  "the-washington-post": {
+    "name": "The Washington Post",
+    "enabled": true
+  },
+  "the-washington-times": {
+    "name": "The Washington Times",
+    "enabled": false
+  },
+  "time": {
+    "name": "Time",
+    "enabled": false
+  },
+  "usa-today": {
+    "name": "USA Today",
+    "enabled": true
+  },
+  "vice-news": {
+    "name": "Vice News",
+    "enabled": true
+  },
+  "wired": {
+    "name": "Wired",
+    "enabled" : true
+  }
+}

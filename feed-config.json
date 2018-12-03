@@ -1,0 +1,18 @@
+{
+  "news" : {
+    "enabled" : "true",
+    "frequency" : 0.25
+  },
+  "mta" : {
+    "enabled" : "true",
+    "frequency" : 0.25
+  },
+  "weather" : {
+    "enabled" : "true",
+    "frequency" : 0.25
+  },
+  "twitter" : {
+    "enabled" : "true",
+    "frequency" : 0.25
+  }
+}
