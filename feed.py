@@ -80,8 +80,10 @@ device = max7219(serial, cascaded=n or 1, block_orientation=block_orientation, r
 
 while True:
 
-    if not feed:
+    if feed:
+        msg = feed.pop()
+        print(msg)
+        show_message(device, msg, fill="white", font=proportional(LCD_FONT), scroll_delay=0.3)
+    else:
         add_to_feed()
-    msg = feed.pop()
-    print(msg)
-    show_message(device, msg, fill="white", font=proportional(LCD_FONT), scroll_delay=0)
+    
