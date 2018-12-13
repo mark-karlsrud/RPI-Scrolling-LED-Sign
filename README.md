@@ -5,17 +5,19 @@ Display weather, tweets, news headlines, weather, and more on a scrolling LED si
 TODO
 
 ##Software Setup
+On your RPI, follow these steps:
+https://luma-led-matrix.readthedocs.io/en/latest/install.html
 
 1. ###Install pip
 
-```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo python get-pip.py
-```
+`sudo apt-get install python-dev python-pip`
 
 2. ###Install Python packages
 
-`sudo pip install requests`
+```
+sudo pip install requests
+sudo pip install max7219
+```
 
 3. ###Create API keys file 
 Create file `API_KEYS.env` in the root directory.
@@ -70,7 +72,7 @@ Obtain your API key [here](https://newsapi.org), and add it to `API_KEYS.env`.
 
 5. ###Modify config
 
-In `feed-config.json`, you can enable, disable, and change the frequency of each feed type. Make sure you frequencies add up to 1.
+In `feed-config.json`, you can enable, disable, and change the frequency of each feed type. Make sure the frequencies add up to 1.
 
 6. ###Run
 

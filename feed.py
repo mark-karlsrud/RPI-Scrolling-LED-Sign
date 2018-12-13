@@ -10,6 +10,11 @@ from twitter import twitter
 import os
 import random
 
+from luma.core.interface.serial import spi, noop
+from luma.led_matrix.device import max7219
+from luma.core.legacy import text, show_message
+from luma.core.legacy.font import proportional, CP437_FONT, LCD_FONT
+
 config_file = os.environ['CONFIG_FILE']
 config = {}
 
@@ -67,8 +72,16 @@ def add_to_feed():
                 except:
                     print('\nError getting twitter\n')
 
-# while True:
+n = 4
+block_orientation = -90
+rotate = 0
+serial = spi(port=0, device=0, gpio=noop())
+device = max7219(serial, cascaded=n or 1, block_orientation=block_orientation, rotate=rotate or 0)
 
-if not feed:
-    add_to_feed()
-print(feed.pop())
+while True:
+
+    if not feed:
+        add_to_feed()
+    msg = feed.pop()
+    print(msg)
+    show_message(device, msg, fill="white", font=proportional(LCD_FONT), scroll_delay=0)
