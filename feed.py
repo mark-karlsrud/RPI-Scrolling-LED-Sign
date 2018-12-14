@@ -81,10 +81,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Mark\'s RPI Scrolling LED sign arguments',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('-n', type=int, default=1, help='Number of cascaded MAX7219 LED matrices')
-    parser.add_argument('--block-orientation', type=int, default=0, choices=[0, 90, -90], help='Corrects block orientation when wired vertically')
+    parser.add_argument('-n', type=int, default=4, help='Number of cascaded MAX7219 LED matrices')
+    parser.add_argument('--block-orientation', type=int, default=-90, choices=[0, 90, -90], help='Corrects block orientation when wired vertically')
     parser.add_argument('--rotate', type=int, default=0, choices=[0, 1, 2, 3], help='Rotate display 0=0°, 1=90°, 2=180°, 3=270°')
-    parser.add_argument('--speed', type=int, default=0, choices=[0, 1, 2, 3], help='Speed. Between 0 and 1. Default=0.2')
+    parser.add_argument('--speed', type=int, default=0.2, choices=[0, 1, 2, 3], help='Speed. Between 0 and 1. Default=0.2')
 
     args = parser.parse_args()
 
