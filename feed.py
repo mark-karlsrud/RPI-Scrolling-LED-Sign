@@ -1,7 +1,9 @@
+# coding=utf-8
 from dotenv import load_dotenv # imports module for dotenv
 load_dotenv(dotenv_path='PROPERTIES.env')
 load_dotenv(dotenv_path='API_KEYS.env') # loads .env from root directory
 
+import argparse
 import json
 from news import news
 from mta import mta
@@ -75,18 +77,25 @@ def add_to_feed():
             if k == 'welcome':
                 feed.append(welcome.get_msg())
 
-# TODO make these args
-n = 4
-block_orientation = -90
-rotate = 0
-serial = spi(port=0, device=0, gpio=noop())
-device = max7219(serial, cascaded=n or 1, block_orientation=block_orientation, rotate=rotate or 0)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Mark\'s RPI Scrolling LED sign arguments',
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-while True:
+    parser.add_argument('-n', type=int, default=1, help='Number of cascaded MAX7219 LED matrices')
+    parser.add_argument('--block-orientation', type=int, default=0, choices=[0, 90, -90], help='Corrects block orientation when wired vertically')
+    parser.add_argument('--rotate', type=int, default=0, choices=[0, 1, 2, 3], help='Rotate display 0=0°, 1=90°, 2=180°, 3=270°')
+    parser.add_argument('--rotate', type=int, default=0, choices=[0, 1, 2, 3], help='Speed. Between 0 and 1. Default=0.2')
 
-    if feed:
-        msg = feed.pop()
-        print(msg)
-        show_message(device, msg, fill="white", font=proportional(LCD_FONT), scroll_delay=0.1)
-    else:
-        add_to_feed()
+    args = parser.parse_args()
+
+    serial = spi(port=0, device=0, gpio=noop())
+    device = max7219(serial, cascaded=args.n or 4, block_orientation=args.block_orientation or -90, rotate=args.rotate or 0)
+
+    while True:
+
+        if feed:
+            msg = feed.pop()
+            print(msg)
+            show_message(device, msg, fill="white", font=proportional(LCD_FONT), scroll_delay=args.speed or 0.2)
+        else:
+            add_to_feed()
