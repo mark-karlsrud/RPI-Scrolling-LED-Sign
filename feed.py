@@ -7,6 +7,7 @@ from news import news
 from mta import mta
 from weather import weather
 from twitter import twitter
+from welcome import welcome
 import os
 import random
 
@@ -71,7 +72,10 @@ def add_to_feed():
                         break
                 except:
                     print('\nError getting twitter\n')
+            if k == 'welcome':
+                feed.append(welcome.get_msg())
 
+# TODO make these args
 n = 4
 block_orientation = -90
 rotate = 0
@@ -83,7 +87,6 @@ while True:
     if feed:
         msg = feed.pop()
         print(msg)
-        show_message(device, msg, fill="white", font=proportional(LCD_FONT), scroll_delay=0.3)
+        show_message(device, msg, fill="white", font=proportional(LCD_FONT), scroll_delay=0.1)
     else:
         add_to_feed()
-    

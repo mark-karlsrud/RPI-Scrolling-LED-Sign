@@ -11,7 +11,7 @@ def get_weather():
         city_id=city_id, api_key=api_key)).json()
 
     if current_weather['cod'] == 200:
-        return('Today\'s weather: {description}, with a high of {high}° and a low of {low}°. It is currently {current_temp}°.'.format(
+        return('Today\'s weather: {description}, with a high of {high}* and a low of {low}*. It is currently {current_temp}*.'.format(
             description=current_weather['weather'][0]['description'],
             high=int(current_weather['main']['temp_max']),
             low=int(current_weather['main']['temp_min']),
